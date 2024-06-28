@@ -61,3 +61,11 @@ This project automates:
 3. Make your changes.
 4. Commit and push your changes.
 5. Create a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Author
+
+- **Filippos Ziogas** - [GitHub Profile](https://github.com/FilipzGit)
