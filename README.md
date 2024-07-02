@@ -8,7 +8,6 @@ This project uses Selenium WebDriver to automate login, search, and adding a pro
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
@@ -54,13 +53,6 @@ This project automates:
     - Search for "whey protein."
     - Add the product to the basket.
 
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes.
-4. Commit and push your changes.
-5. Create a Pull Request.
 
 ## License
 
