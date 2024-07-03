@@ -9,6 +9,7 @@ This project uses Selenium WebDriver to automate login, search, and adding a pro
 - [Setup](#setup)
 - [Usage](#usage)
 - [License](#license)
+- [Author](#author)
 
 ## Introduction
 
@@ -38,6 +39,21 @@ This project automates:
     npm install
     ```
 
+3. **Update Login Credentials**:
+
+    Before running the test, open the `login.js` file and update it with your personal email and password.
+
+    ```javascript
+    
+        const emailAccount = await driver.wait(until.elementLocated(By.css('input[name="Email address"]')), 10000);
+        await emailAccount.sendKeys('your-email@example.com'); // Replace with your email
+        console.log("Entered email address.");
+
+        const passwordAccount = await driver.wait(until.elementLocated(By.css('input[name="Password"]')), 10000);
+        await passwordAccount.sendKeys("your-password"); // Replace with your password
+        console.log("Entered password.");
+    ```
+
 ## Usage
 
 1. **Run the automation script**:
@@ -52,7 +68,6 @@ This project automates:
     - Log in with provided credentials.
     - Search for "whey protein."
     - Add the product to the basket.
-
 
 ## License
 
