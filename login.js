@@ -15,11 +15,11 @@ async function login(driver) {
     console.log("Ready to login...");
 
     const emailAccount = await driver.wait(until.elementLocated(By.css('input[name="Email address"]')), 10000);
-    await emailAccount.sendKeys('filipposzi91@gmail.com');
+    await emailAccount.sendKeys('Your_email');
     console.log("Entered email address.");
 
     const passwordAccount = await driver.wait(until.elementLocated(By.css('input[name="Password"]')), 10000);
-    await passwordAccount.sendKeys("bDStpQC9h&9N+8W");
+    await passwordAccount.sendKeys("Your_Password");
     console.log("Entered password.");
 
     const signInButton = await driver.wait(until.elementLocated(By.xpath('//*[@id="main-content"]/div/div[1]/section/div/div[1]/div/form/div[5]/div/button')), 10000);
