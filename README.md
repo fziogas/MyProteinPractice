@@ -8,7 +8,6 @@ This project uses Selenium WebDriver to automate login, search, and adding a pro
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
 - [Usage](#usage)
-- [License](#license)
 - [Author](#author)
 
 ## Introduction
@@ -68,10 +67,6 @@ This project automates:
     - Log in with provided credentials.
     - Search for "whey protein."
     - Add the product to the basket.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Author
 
