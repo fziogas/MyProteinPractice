@@ -24,7 +24,7 @@ const { dismissBanners } = require('./utils');
     } catch (error) {
         console.error(`An error occurred: ${error}`);
     } finally {
-        // await driver.quit();
+        await driver.quit();
         console.log("Browser closed.");
     }
 })();
