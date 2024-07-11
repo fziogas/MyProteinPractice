@@ -70,4 +70,4 @@ This project automates:
 
 ## Author
 
-- **Filippos Ziogas** - [GitHub Profile](https://github.com/FilipzGit)
+- **Filippos Ziogas** - [GitHub Profile](https://github.com/fziogas)
