@@ -10,7 +10,7 @@ const { dismissBanners } = require('./utils');
         await driver.manage().window().maximize();
         console.log("Browser window maximized.");
 
-        console.log("Starting the login process...");
+        console.log("Starting the login process....");
         await login(driver);
         console.log("Logged in successfully!");
 
