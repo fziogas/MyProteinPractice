@@ -40,18 +40,20 @@ This project automates:
 
 3. **Update Login Credentials**:
 
-    Before running the test, open the `login.js` file and update it with your personal email and password.
+    Before running the test, open the `credentials.js` file and update it with your personal email and password.
 
     ```javascript
-    
-        const emailAccount = await driver.wait(until.elementLocated(By.css('input[name="Email address"]')), 10000);
-        await emailAccount.sendKeys('your-email@example.com'); // Replace with your email
-        console.log("Entered email address.");
+    // credentials.js
 
-        const passwordAccount = await driver.wait(until.elementLocated(By.css('input[name="Password"]')), 10000);
-        await passwordAccount.sendKeys("your-password"); // Replace with your password
-        console.log("Entered password.");
+    module.exports = {
+        credentials: {
+            email: 'your-email@example.com',
+            password: 'your-password'
+        }
+    };
     ```
+
+    Replace `'your-email@example.com'` and `'your-password'` with your actual MyProtein login credentials.
 
 ## Usage
 
@@ -70,4 +72,4 @@ This project automates:
 
 ## Author
 
-- **Filippos Ziogas** - [GitHub Profile](https://github.com/fziogas)
+- **Filippos Ziogas** - [GitHub Profile](https://github.com/FilipzGit)

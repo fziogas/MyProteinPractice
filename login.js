@@ -1,5 +1,8 @@
+// login.js
+
 const { By, until } = require('selenium-webdriver');
 const { dismissBanners } = require('./utils');
+const { credentials } = require('./credentials');
 
 async function login(driver) {
     await driver.get('https://www.myprotein.com/');
@@ -15,11 +18,11 @@ async function login(driver) {
     console.log("Ready to login...");
 
     const emailAccount = await driver.wait(until.elementLocated(By.css('input[name="Email address"]')), 10000);
-    await emailAccount.sendKeys('Your_email');
+    await emailAccount.sendKeys(credentials.email);
     console.log("Entered email address.");
 
     const passwordAccount = await driver.wait(until.elementLocated(By.css('input[name="Password"]')), 10000);
-    await passwordAccount.sendKeys("Your_Password");
+    await passwordAccount.sendKeys(credentials.password);
     console.log("Entered password.");
 
     const signInButton = await driver.wait(until.elementLocated(By.xpath('//*[@id="main-content"]/div/div[1]/section/div/div[1]/div/form/div[5]/div/button')), 10000);

@@ -34,7 +34,6 @@ async function search(driver) {
         await option25kgButton.click();
         console.log("Selected the 2.5kg option.");
 
-        // Wait for the "Add to basket" button to become visible
         const addToBasketButton = await driver.wait(until.elementLocated(By.xpath('//*[@id="mainContent"]/div[3]/div[2]/div/div[6]/div[2]/div[2]/span/span/button')), 10000);
         await driver.executeScript("arguments[0].scrollIntoView();", addToBasketButton);
         await addToBasketButton.click();
